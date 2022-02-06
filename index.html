@@ -1,0 +1,26 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  <script src="https://www.drv.tw/inc/wd.js?s=fnog8yl5ubvaayhyo7xxxw"></script></head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="FB1.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=["1. Father (Dheeraj Varshney)", "2. Mother (Priyanka Varshney)", "3. Brother (Devansh Varshney)", "4. Me (Harshal Varshney)"];
+ var images=["https://o.remove.bg/uploads/9405b98e-9dee-412d-ab4d-4283c490dd4c/IMG_20200229_191310__1_.jpg", "https://4.bp.blogspot.com/-q36jqI7LgDg/Va0elUXfW-I/AAAAAAAAAng/BrKF7ZAfSxE/s1600/11207289_775543629211511_8831086606163597312_n.jpg", "https://castyou-website.sgp1.digitaloceanspaces.com/2019/07/1878.jpg", "https://castyou-website.sgp1.digitaloceanspaces.com/2019/07/1925.jpg"];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  </body>
+</html>
